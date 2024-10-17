@@ -12,7 +12,6 @@ export const env = createEnv({
   server: {
     OPENPANEL_SECRET_KEY: z.string(),
     RESEND_API_KEY: z.string(),
-    SUPABASE_SERVICE_KEY: z.string(),
     UPSTASH_REDIS_REST_TOKEN: z.string(),
     UPSTASH_REDIS_REST_URL: z.string(),
   },
@@ -30,7 +29,6 @@ export const env = createEnv({
     OPENPANEL_SECRET_KEY: process.env.OPENPANEL_SECRET_KEY,
     PORT: process.env.PORT,
     RESEND_API_KEY: process.env.RESEND_API_KEY,
-    SUPABASE_SERVICE_KEY: process.env.SUPABASE_SERVICE_KEY,
     UPSTASH_REDIS_REST_TOKEN: process.env.UPSTASH_REDIS_REST_TOKEN,
     UPSTASH_REDIS_REST_URL: process.env.UPSTASH_REDIS_REST_URL,
     VERCEL_URL: process.env.VERCEL_URL,
