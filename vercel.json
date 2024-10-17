@@ -2,7 +2,8 @@
   "rewrites": [
     {
       "source": "/app/:path*",
-      "destination": "https://x1-starter-app.vercel.app/:path*"
+      "destination": "https://x1-starter-app.vercel.app/:path*",
+      "trailingSlash": false
     }
   ]
 }
