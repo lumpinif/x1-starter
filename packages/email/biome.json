@@ -1,0 +1,6 @@
+{
+  "extends": ["../../biome.json"],
+  "linter": {
+    "ignore": ["node_modules", ".next", "packages/tsconfig", ".react-email"]
+  }
+}

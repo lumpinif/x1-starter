@@ -1,0 +1,3 @@
+{
+  "extends": "@x1-starter/typescript/base.json"
+}
