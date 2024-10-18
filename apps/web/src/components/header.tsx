@@ -34,7 +34,7 @@ export function Header() {
         <ul className="flex items-center gap-4">
           <li>
             <a
-              href="https://github.com/midday-ai/x1-starter"
+              href="https://github.com/lumpinif/x1-starter"
               className="text-sm px-4 py-2 bg-primary text-secondary rounded-full font-medium"
             >
               Github
