@@ -1,8 +1,8 @@
 "use client";
 
 import { supabaseBrowserClient } from "@x1-starter/supabase/client";
+import { Icons } from "@x1-starter/ui/components/icons";
 import { Button } from "@x1-starter/ui/components/ui/button";
-import { Icons } from "@x1-starter/ui/icons";
 import { useRouter } from "next/navigation";
 
 export function SignOut() {

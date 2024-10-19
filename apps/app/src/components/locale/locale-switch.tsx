@@ -1,6 +1,7 @@
 "use client";
 
 import { useChangeLocale, useCurrentLocale } from "@/locales/client";
+import { Icons } from "@x1-starter/ui/components/icons/index";
 import { Button } from "@x1-starter/ui/components/ui/button";
 import {
   DropdownMenu,
@@ -8,7 +9,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@x1-starter/ui/components/ui/dropdown-menu";
-import { Icons } from "@x1-starter/ui/icons";
+import { cn } from "@x1-starter/ui/lib/utils";
 import { Suspense } from "react";
 
 const locales = ["en", "cn", "fr"];
@@ -30,6 +31,12 @@ function LocaleSwitchContent() {
           <DropdownMenuItem
             key={locale}
             onClick={() => changeLocale(locale as "en" | "cn" | "fr")}
+            className={cn(
+              "text-sm hover:cursor-pointer",
+              currentLocale === locale
+                ? "text-primary font-medium"
+                : "text-muted-foreground",
+            )}
           >
             {locale.toUpperCase()}
           </DropdownMenuItem>

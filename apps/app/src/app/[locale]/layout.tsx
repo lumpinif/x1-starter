@@ -1,13 +1,10 @@
 import "@x1-starter/ui/globals.css";
-import { Footer } from "@/components/footer";
 
-import { LocaleSwitch } from "@/components/locale/locale-switch";
 import { Providers } from "@/components/providers";
 import { cn } from "@x1-starter/ui/lib/utils";
 import { GeistMono } from "geist/font/mono";
 import { GeistSans } from "geist/font/sans";
 import type { Metadata } from "next";
-import { ThemeProvider } from "next-themes";
 
 export const metadata: Metadata = {
   title: "Create x1-starter",
@@ -37,7 +34,6 @@ export default function RootLayout({
         )}
       >
         <Providers>{children}</Providers>
-        <Footer />
       </body>
     </html>
   );

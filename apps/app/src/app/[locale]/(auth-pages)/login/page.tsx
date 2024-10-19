@@ -7,10 +7,10 @@ import {
 } from "@/actions/auth";
 import { FormMessage, Message } from "@/components/auth/form-message";
 
-import GoogleIcon from "@/components/icons/google-icon";
 import { SubmitButton } from "@/components/submit-button";
 import { getI18n } from "@/locales/server";
 import GithubIcon from "@x1-starter/ui/components/icons/github-icon";
+import GoogleIcon from "@x1-starter/ui/components/icons/google-icon";
 import { Input } from "@x1-starter/ui/components/ui/input";
 import { Label } from "@x1-starter/ui/components/ui/label";
 

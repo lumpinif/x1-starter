@@ -1,9 +1,9 @@
 "use client";
 
 import { subscribeAction } from "@/actions/subscribe-action";
+import { Icons } from "@x1-starter/ui/components/icons";
 import { Button } from "@x1-starter/ui/components/ui/button";
 import { Input } from "@x1-starter/ui/components/ui/input";
-import { Icons } from "@x1-starter/ui/icons";
 import { useState } from "react";
 import { useFormStatus } from "react-dom";
 
