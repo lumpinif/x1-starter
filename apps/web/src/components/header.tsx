@@ -7,7 +7,7 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from "@x1-starter/ui/dialog";
+} from "@x1-starter/ui/components/ui/dialog";
 import Image from "next/image";
 import Link from "next/link";
 import { SubscribeForm } from "./subscribe-form";

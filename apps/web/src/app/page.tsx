@@ -5,7 +5,7 @@ import {
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from "@x1-starter/ui/tooltip";
+} from "@x1-starter/ui/components/ui/tooltip";
 
 export default function Page() {
   return (

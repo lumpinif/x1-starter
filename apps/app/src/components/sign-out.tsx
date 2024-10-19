@@ -1,14 +1,18 @@
 "use client";
 
-import { createClient } from "@x1-starter/supabase/client";
-import { Button } from "@x1-starter/ui/button";
+import { supabaseBrowserClient } from "@x1-starter/supabase/client";
+import { Button } from "@x1-starter/ui/components/ui/button";
 import { Icons } from "@x1-starter/ui/icons";
+import { useRouter } from "next/navigation";
 
 export function SignOut() {
-  const supabase = createClient();
+  const supabase = supabaseBrowserClient();
+  const router = useRouter();
 
-  const handleSignOut = () => {
-    supabase.auth.signOut();
+  const handleSignOut = async () => {
+    await supabase.auth.signOut();
+    router.push("/");
+    router.refresh();
   };
 
   return (

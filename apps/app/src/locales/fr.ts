@@ -1,3 +1,43 @@
 export default {
   welcome: "Bonjour {name}!",
+  login: {
+    title: "Connexion",
+    noAccount: "Vous n'avez pas de compte ?",
+    signUp: "Inscrivez-vous ici",
+    socialLogin: "Connectez-vous avec Google ou GitHub",
+    orMagicLink: "ou Lien Magique",
+    email: "E-mail",
+    password: "Mot de passe",
+    forgotPassword: "Mot de passe oublié ?",
+    signInWithEmail: "Se connecter avec l'e-mail",
+    signingIn: "Connexion en cours",
+  },
+  signup: {
+    title: "S'inscrire",
+    haveAccount: "Vous avez déjà un compte ?",
+    loginHere: "Connectez-vous ici",
+    email: "E-mail",
+    password: "Mot de passe",
+    signupButton: "S'inscrire",
+    signingUp: "Inscription en cours...",
+  },
+  forgotPassword: {
+    title: "Réinitialiser le mot de passe",
+    haveAccount: "Vous avez déjà un compte ?",
+    signInHere: "Connectez-vous ici",
+    email: "E-mail",
+    resetButton: "Réinitialiser le mot de passe",
+  },
+  magicLink: {
+    title: "Connexion par Lien Magique",
+    description:
+      "Entrez votre adresse e-mail pour recevoir un lien magique pour une connexion instantanée.",
+    email: "E-mail",
+    sendButton: "Envoyez-moi un Lien Magique",
+    sending: "Envoi en cours...",
+    orText: "ou",
+    otherMethods: "Préférez-vous d'autres méthodes de connexion ?",
+    passwordSignIn: "Se connecter avec un mot de passe",
+    socialSignIn: "Google / GitHub",
+  },
 } as const;

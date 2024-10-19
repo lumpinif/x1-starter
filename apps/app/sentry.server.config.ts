@@ -1,8 +1,8 @@
 import * as Sentry from "@sentry/nextjs";
 import { supabaseIntegration } from "@supabase/sentry-js-integration";
-import { createClient } from "@x1-starter/supabase/client";
+import { supabaseBrowserClient } from "@x1-starter/supabase/client";
 
-const client = createClient();
+const client = supabaseBrowserClient();
 
 Sentry.init({
   dsn: process.env.NEXT_PUBLIC_SENTRY_DSN,

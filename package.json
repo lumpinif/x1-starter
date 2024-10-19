@@ -12,6 +12,7 @@
     "dev:app": "turbo dev --filter=@x1-starter/app",
     "start:web": "turbo start --filter=@x1-starter/web",
     "start:app": "turbo start --filter=@x1-starter/app",
+    "ui": "bun run --cwd packages/ui ui",
     "test": "turbo test --parallel",
     "format": "biome format --write .",
     "lint": "turbo lint && bun lint:repo",

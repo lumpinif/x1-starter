@@ -3,7 +3,7 @@ import { setupAnalytics } from "@x1-starter/analytics/server";
 import { ratelimit } from "@x1-starter/kv/ratelimit";
 import { logger } from "@x1-starter/logger";
 import { getUser } from "@x1-starter/supabase/queries";
-import { createClient } from "@x1-starter/supabase/server";
+import { supabaseServerClient } from "@x1-starter/supabase/server";
 import {
   DEFAULT_SERVER_ERROR_MESSAGE,
   createSafeActionClient,
@@ -77,7 +77,7 @@ export const authActionClient = actionClientWithMeta
     const {
       data: { user },
     } = await getUser();
-    const supabase = createClient();
+    const supabase = supabaseServerClient();
 
     if (!user) {
       throw new Error("Unauthorized");

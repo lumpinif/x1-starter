@@ -1,3 +1,43 @@
 export default {
   welcome: "Hello {name}!",
+  login: {
+    title: "Login",
+    noAccount: "Don't have an account?",
+    signUp: "Sign up here",
+    socialLogin: "Sign in with Google or GitHub",
+    orMagicLink: "or Magic Link",
+    email: "Email",
+    password: "Password",
+    forgotPassword: "Forgot Password?",
+    signInWithEmail: "Sign in with Email",
+    signingIn: "Signing In",
+  },
+  signup: {
+    title: "Sign up",
+    haveAccount: "Already have an account?",
+    loginHere: "Log in here",
+    email: "Email",
+    password: "Password",
+    signupButton: "Sign up",
+    signingUp: "Signing up...",
+  },
+  forgotPassword: {
+    title: "Reset Password",
+    haveAccount: "Already have an account?",
+    signInHere: "Sign in here",
+    email: "Email",
+    resetButton: "Reset Password",
+  },
+  magicLink: {
+    title: "Magic Link Sign In",
+    description:
+      "Enter your email address to receive a magic link for instant login.",
+    email: "Email",
+    sendButton: "Send me a Magic Link",
+    sending: "Sending...",
+    orText: "or",
+    otherMethods: "Prefer other methods to sign in?",
+    passwordSignIn: "Sign in with password",
+    socialSignIn: "Google / GitHub",
+  },
 } as const;

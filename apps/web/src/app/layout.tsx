@@ -2,7 +2,7 @@ import "@x1-starter/ui/globals.css";
 import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
 import { Provider as AnalyticsProvider } from "@x1-starter/analytics/client";
-import { cn } from "@x1-starter/ui/cn";
+import { cn } from "@x1-starter/ui/lib/utils";
 import { GeistMono } from "geist/font/mono";
 import { GeistSans } from "geist/font/sans";
 import type { Metadata } from "next";

@@ -1,8 +1,9 @@
-import { Check, Copy, Loader2, LogOut } from "lucide-react";
+import { Check, Copy, Globe, Loader2, LogOut } from "lucide-react";
 
 export const Icons = {
   SignOut: LogOut,
   Copy,
   Check,
   Loader: Loader2,
+  Globe,
 };

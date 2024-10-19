@@ -17,10 +17,16 @@
         "noSvgWithoutTitle": "off"
       },
       "style": {
-        "noNonNullAssertion": "off"
+        "useTemplate": "off",
+        "useImportType": "off",
+        "noNonNullAssertion": "off",
+        "useSelfClosingElements": "off"
       },
       "correctness": {
         "useExhaustiveDependencies": "off"
+      },
+      "complexity": {
+        "noForEach": "off"
       }
     }
   },

@@ -1,6 +1,9 @@
 import "@x1-starter/ui/globals.css";
 import { Footer } from "@/components/footer";
-import { cn } from "@x1-starter/ui/cn";
+
+import { LocaleSwitch } from "@/components/locale/locale-switch";
+import { Providers } from "@/components/providers";
+import { cn } from "@x1-starter/ui/lib/utils";
 import { GeistMono } from "geist/font/mono";
 import { GeistSans } from "geist/font/sans";
 import type { Metadata } from "next";
@@ -20,8 +23,10 @@ export const viewport = {
 
 export default function RootLayout({
   children,
+  params: { locale },
 }: Readonly<{
   children: React.ReactNode;
+  params: { locale: string };
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
@@ -31,16 +36,8 @@ export default function RootLayout({
           "antialiased",
         )}
       >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          {children}
-
-          <Footer />
-        </ThemeProvider>
+        <Providers>{children}</Providers>
+        <Footer />
       </body>
     </html>
   );

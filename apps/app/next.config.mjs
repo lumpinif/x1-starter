@@ -1,11 +1,42 @@
 import "./src/env.mjs";
+
 import { withSentryConfig } from "@sentry/nextjs";
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  transpilePackages: ["@x1-starter/supabase"],
+  poweredByHeader: false,
+  reactStrictMode: true,
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "**",
+      },
+    ],
+  },
+  transpilePackages: [
+    "@x1-starter/ui",
+    "@x1-starter/jobs",
+    "@x1-starter/supabase",
+  ],
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
   experimental: {
     instrumentationHook: process.env.NODE_ENV === "production",
+  },
+  async headers() {
+    return [
+      {
+        source: "/((?!api/proxy).*)",
+        headers: [
+          {
+            key: "X-Frame-Options",
+            value: "DENY",
+          },
+        ],
+      },
+    ];
   },
 };
 
