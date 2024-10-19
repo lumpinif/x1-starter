@@ -1,5 +1,5 @@
 import { Cookies } from "@/utils/constants";
-import { supabaseServerClient } from "@v1/supabase/server";
+import { supabaseServerClient } from "@x1-starter/supabase/server";
 import { addYears } from "date-fns";
 import { cookies } from "next/headers";
 import { NextResponse } from "next/server";

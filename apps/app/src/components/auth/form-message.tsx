@@ -1,7 +1,7 @@
 export type Message =
   | { success: string }
   | { error: string }
-  | { message: string }
+  | { message: string };
 
 export function FormMessage({ message }: { message: Message }) {
   return (
@@ -22,5 +22,5 @@ export function FormMessage({ message }: { message: Message }) {
         </div>
       )}
     </div>
-  )
+  );
 }

@@ -13,5 +13,5 @@ export default function VercelIcon({ className = "" }: { className?: string }) {
         <polygon points="128 0 256 221.705007 0 221.705007"></polygon>
       </g>
     </svg>
-  )
+  );
 }
