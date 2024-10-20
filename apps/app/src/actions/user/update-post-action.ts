@@ -11,6 +11,5 @@ export const updateUserAction = authActionClient
   })
   .action(async ({ parsedInput: input, ctx: { user } }) => {
     const result = await updateUser(user.id, input);
-
     return result;
   });
