@@ -100,7 +100,7 @@ begin
         nullif(new.raw_user_meta_data->>'avatar_url', '')
     )
     on conflict (id) do update set
-        user_name = excluded.user_name,
+        user_name = coalesce(public.profiles.user_name, excluded.user_name),
         full_name = coalesce(public.profiles.full_name, excluded.full_name),
         avatar_url = coalesce(public.profiles.avatar_url, excluded.avatar_url),
         updated_at = now();
