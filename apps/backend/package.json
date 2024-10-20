@@ -2,9 +2,8 @@
   "name": "@x1-starter/backend",
   "private": true,
   "scripts": {
-    "dev": "supabase start",
-    "login": "supabase login",
-    "db:reset": ""
+    "migration:new": "bunx supabase migration new",
+    "db:push": "bunx supabase db push"
   },
   "dependencies": {
     "supabase": "^1.204.3"

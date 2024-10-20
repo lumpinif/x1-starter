@@ -1,3 +1,8 @@
+-- Enable moddatetime extension
+create extension moddatetime
+with
+  schema extensions;
+
 -- Create a table for public profiles
 create table
   public.profiles (
@@ -25,6 +30,10 @@ create table
     -- Ensure username length is between 3 and 19 characters
     constraint profiles_user_name_check check (char_length(user_name) >= 3 and char_length(user_name) < 20)
   );
+
+-- Create trigger to automatically update updated_at
+create trigger handle_profiles_updated_at before update on profiles
+  for each row execute function moddatetime (updated_at);
 
 -- Set up Row Level Security (RLS)
 -- See https://supabase.com/docs/guides/database/postgres/row-level-security for more details.
