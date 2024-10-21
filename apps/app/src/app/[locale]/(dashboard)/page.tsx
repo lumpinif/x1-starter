@@ -11,7 +11,7 @@ export default async function DashboardPage() {
   const t = await getI18n();
 
   return (
-    <div className="flex flex-col items-center justify-center h-full">
+    <div className="flex h-full flex-col items-center justify-center">
       <div className="flex flex-col items-center justify-center gap-4">
         <p>{t("welcome", { name: data?.user?.email })}</p>
         <SignOut />

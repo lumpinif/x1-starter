@@ -34,7 +34,7 @@ function LocaleSwitchContent() {
             className={cn(
               "text-sm hover:cursor-pointer",
               currentLocale === locale
-                ? "text-primary font-medium"
+                ? "font-medium text-primary"
                 : "text-muted-foreground",
             )}
           >

@@ -19,7 +19,7 @@ export function CopyText({ value }: { value: string }) {
     <button
       onClick={handleCopy}
       type="button"
-      className="font-mono text-[#878787] text-xs md:text-sm p-4 rounded-full border border-border transition-colors flex items-center gap-2 bg-background"
+      className="flex items-center gap-2 rounded-full border border-border bg-background p-4 font-mono text-[#878787] text-xs transition-colors md:text-sm"
     >
       <span>{value}</span>
       {copied ? (

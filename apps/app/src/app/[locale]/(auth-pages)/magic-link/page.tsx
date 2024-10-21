@@ -14,11 +14,11 @@ export default async function MagicLink({
 
   return (
     <div className="mx-auto flex min-w-64 flex-1 flex-col">
-      <h1 className="text-2xl font-medium">{t("magicLink.title")}</h1>
+      <h1 className="font-medium text-2xl">{t("magicLink.title")}</h1>
 
       {/* Magic link form section */}
       <div className="mt-8 w-full">
-        <p className="mb-4 text-sm text-muted-foreground">
+        <p className="mb-4 text-muted-foreground text-sm">
           {t("magicLink.description")}
         </p>
         <form className="flex flex-col gap-2">
@@ -46,7 +46,7 @@ export default async function MagicLink({
       {/* Divider */}
       <div className="my-6 flex items-center">
         <hr className="flex-grow border border-t" />
-        <span className="mx-4 select-none text-sm text-muted-foreground">
+        <span className="mx-4 select-none text-muted-foreground text-sm">
           {t("magicLink.orText")}
         </span>
         <hr className="flex-grow border border-t" />
@@ -55,19 +55,19 @@ export default async function MagicLink({
       {/* Links to other login methods */}
       <div className="flex flex-col gap-2">
         {/* Link to regular login page */}
-        <p className="text-sm text-muted-foreground">
+        <p className="text-muted-foreground text-sm">
           {t("magicLink.otherMethods")}
         </p>
 
         <div className="flex w-full items-center justify-between gap-4">
           <Link
             href="/login"
-            className="text-sm text-foreground hover:underline"
+            className="text-foreground text-sm hover:underline"
           >
             {t("magicLink.passwordSignIn")}
           </Link>
           <Link
-            className="text-sm text-foreground hover:underline"
+            className="text-foreground text-sm hover:underline"
             href="/login"
           >
             {t("magicLink.socialSignIn")}

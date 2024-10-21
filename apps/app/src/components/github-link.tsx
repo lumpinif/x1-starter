@@ -10,7 +10,7 @@ export function GithubLink() {
       rel="noopener noreferrer"
       href="https://github.com/lumpinif/x1-starter"
       className={cn(
-        "outline-none border-none",
+        "border-none outline-none",
         buttonVariants({
           size: "icon",
           variant: "outline",

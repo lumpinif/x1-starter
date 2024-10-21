@@ -22,10 +22,10 @@ export default function WelcomeEmail() {
     <Html>
       <Preview>Welcome</Preview>
       <Tailwind>
-        <Body className="my-auto mx-auto font-sans">
-          <Container className="border-transparent my-[40px] mx-auto max-w-[600px]">
+        <Body className="mx-auto my-auto font-sans">
+          <Container className="mx-auto my-[40px] max-w-[600px] border-transparent">
             <Logo baseUrl={baseUrl} />
-            <Heading className="font-normal text-center p-0 my-[30px] mx-0">
+            <Heading className="mx-0 my-[30px] p-0 text-center font-normal">
               Welcome to x1-starter
             </Heading>
             <Section className="mb-4">
@@ -53,7 +53,7 @@ export default function WelcomeEmail() {
             </Section>
             <Section className="mb-6">
               <Link href={baseUrl}>
-                <Button className="bg-black text-white p-4 text-center">
+                <Button className="bg-black p-4 text-center text-white">
                   Get started
                 </Button>
               </Link>

@@ -22,8 +22,8 @@ export default async function Signup({
   return (
     <>
       <form className="mx-auto flex min-w-64 flex-1 flex-col">
-        <h1 className="text-2xl font-medium">{t("signup.title")}</h1>
-        <div className="text flex items-center justify-between text-sm text-muted-foreground">
+        <h1 className="font-medium text-2xl">{t("signup.title")}</h1>
+        <div className="text flex items-center justify-between text-muted-foreground text-sm">
           <p>{t("signup.haveAccount")}</p>
           <Link
             className="font-medium text-foreground hover:underline"

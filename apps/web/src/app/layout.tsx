@@ -29,8 +29,8 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body
         className={cn(
-          `${DepartureMono.variable} ${GeistSans.variable} ${GeistMono.variable}`,
-          "antialiased dark",
+          `${DepartureMono.variable}${GeistSans.variable}${GeistMono.variable}`,
+          "dark antialiased",
         )}
       >
         <Header />

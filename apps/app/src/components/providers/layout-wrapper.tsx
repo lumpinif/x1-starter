@@ -6,12 +6,12 @@ export default function LayoutWrapper({
   children: React.ReactNode;
 }) {
   return (
-    <div className="min-h-screen flex flex-col">
-      <header className="p-4 flex justify-end items-center">
+    <div className="flex min-h-screen flex-col">
+      <header className="flex items-center justify-end p-4">
         <GithubLink />
         <LocaleSwitch />
       </header>
-      <main className="flex-grow flex items-center justify-center">
+      <main className="flex flex-grow items-center justify-center">
         {children}
       </main>
     </div>

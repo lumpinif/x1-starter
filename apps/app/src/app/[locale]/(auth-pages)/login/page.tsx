@@ -24,9 +24,9 @@ export default async function Login({
 
   return (
     <div className="mx-auto flex min-w-64 flex-1 flex-col">
-      <h1 className="text-2xl font-medium">{t("login.title")}</h1>
+      <h1 className="font-medium text-2xl">{t("login.title")}</h1>
       {/* Link to sign-up page for new users */}
-      <div className="text flex items-center justify-between text-sm text-muted-foreground">
+      <div className="text flex items-center justify-between text-muted-foreground text-sm">
         <p>{t("login.noAccount")}</p>
         <Link
           className="font-medium text-foreground hover:underline"
@@ -39,11 +39,11 @@ export default async function Login({
       {/* Social login buttons section */}
       <div className="mt-8 flex flex-col gap-2">
         <div className="flex w-full items-center justify-between gap-4">
-          <p className="text-xs text-muted-foreground">
+          <p className="text-muted-foreground text-xs">
             {t("login.socialLogin")}
           </p>
           <Link
-            className="group text-xs text-muted-foreground"
+            className="group text-muted-foreground text-xs"
             href="/magic-link"
           >
             {t("login.orMagicLink")}
@@ -78,7 +78,7 @@ export default async function Login({
       {/* Divider between social login and email/password form */}
       <div className="my-6 flex items-center">
         <hr className="flex-grow border border-t" />
-        <span className="mx-4 select-none text-sm text-muted-foreground">
+        <span className="mx-4 select-none text-muted-foreground text-sm">
           or
         </span>
         <hr className="flex-grow border border-t" />
@@ -98,7 +98,7 @@ export default async function Login({
           <Label htmlFor="password">{t("login.password")}</Label>
           {/* Link to forgot password page */}
           <Link
-            className="text-xs text-muted-foreground hover:text-foreground hover:underline"
+            className="text-muted-foreground text-xs hover:text-foreground hover:underline"
             href="/forgot-password"
           >
             {t("login.forgotPassword")}

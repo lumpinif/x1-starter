@@ -1,10 +1,10 @@
 export function Footer() {
   return (
-    <footer className="flex items-center justify-center font-mono text-xs fixed bottom-8 w-full flex-col space-y-6">
+    <footer className="fixed bottom-8 flex w-full flex-col items-center justify-center space-y-6 font-mono text-xs">
       <span className="text-[#878787]">Featuring</span>
 
-      <div className="relative flex overflow-x-hidden space-x-6">
-        <div className="flex items-center space-x-6 animate-marquee whitespace-nowrap lg:animate-none">
+      <div className="relative flex space-x-6 overflow-x-hidden">
+        <div className="flex animate-marquee items-center space-x-6 whitespace-nowrap lg:animate-none">
           <a
             href="https://vercel.com?utm_source=v1"
             target="_blank"
@@ -479,7 +479,7 @@ export function Footer() {
           </a>
         </div>
 
-        <div className="flex items-center space-x-6 animate-marquee2 whitespace-nowrap absolute top-0 lg:hidden">
+        <div className="absolute top-0 flex animate-marquee2 items-center space-x-6 whitespace-nowrap lg:hidden">
           <a
             href="https://vercel.com?utm_source=v1"
             target="_blank"

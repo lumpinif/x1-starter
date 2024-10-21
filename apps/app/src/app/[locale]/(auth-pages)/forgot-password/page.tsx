@@ -17,8 +17,8 @@ export default async function ForgotPassword({
     <>
       <form className="mx-auto flex min-w-64 flex-1 flex-col gap-2 text-foreground [&>input]:mb-6">
         <div>
-          <h1 className="text-2xl font-medium">{t("forgotPassword.title")}</h1>
-          <div className="flex items-center justify-between text-sm text-muted-foreground">
+          <h1 className="font-medium text-2xl">{t("forgotPassword.title")}</h1>
+          <div className="flex items-center justify-between text-muted-foreground text-sm">
             <p>{t("forgotPassword.haveAccount")}</p>
             <Link className="text-foreground hover:underline" href="/login">
               {t("forgotPassword.signInHere")}

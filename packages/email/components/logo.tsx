@@ -5,7 +5,7 @@ export function Logo({ baseUrl }: { baseUrl: string }) {
     <Img
       src={`${baseUrl}/logo.png`}
       alt="Logo"
-      className="my-0 mx-auto text-center"
+      className="mx-auto my-0 text-center"
       width={70}
       height={70}
     />

@@ -9,10 +9,13 @@
     "enabled": true
   },
   "linter": {
-    "ignore": ["node_modules", ".next", "packages/tsconfig"],
+    "ignore": ["node_modules", ".next"],
     "enabled": true,
     "rules": {
       "recommended": true,
+      "nursery": {
+        "useSortedClasses": "info"
+      },
       "a11y": {
         "noSvgWithoutTitle": "off"
       },
@@ -31,6 +34,19 @@
     }
   },
   "formatter": {
-    "indentStyle": "space"
+    "ignore": ["node_modules", ".next"],
+    "enabled": true,
+    "indentStyle": "space",
+    "indentWidth": 2
+  },
+  "css": {
+    "formatter": {
+      "enabled": true
+    }
+  },
+  "javascript": {
+    "formatter": {
+      "quoteStyle": "double"
+    }
   }
 }

@@ -1,11 +1,7 @@
 {
   "name": "x1-starter",
   "private": true,
-  "workspaces": [
-    "packages/*",
-    "apps/*",
-    "tooling/*"
-  ],
+  "workspaces": ["packages/*", "apps/*", "tooling/*"],
   "scripts": {
     "build": "turbo build",
     "clean": "git clean -xdf node_modules",
@@ -18,8 +14,8 @@
     "start:app": "turbo start --filter=@x1-starter/app",
     "ui": "bun run --cwd packages/ui ui",
     "test": "turbo test --parallel",
-    "format": "turbo format",
-    "lint": "turbo lint && bun lint:repo",
+    "format": "turbo format && biome format --write .",
+    "lint": "turbo lint && bun lint:repo && biome check --write --unsafe .",
     "lint:repo": "bunx sherif@latest",
     "lint:repo:fix": "bunx sherif@latest --fix",
     "typecheck": "turbo typecheck"

@@ -7,8 +7,8 @@ import { GeistSans } from "geist/font/sans";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Create x1-starter",
-  description: "Production ready Next.js app",
+  title: "x1-starter",
+  description: "Production ready modern app starter",
 };
 
 export const viewport = {
@@ -29,8 +29,8 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body
         className={cn(
-          `${GeistSans.variable} ${GeistMono.variable}`,
-          "antialiased",
+          `${GeistSans.variable}${GeistMono.variable}`,
+          "dark antialiased",
         )}
       >
         <Providers>{children}</Providers>

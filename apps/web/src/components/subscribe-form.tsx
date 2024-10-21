@@ -30,7 +30,7 @@ export function SubscribeForm({ group, placeholder, className }: Props) {
     <div>
       <div>
         {isSubmitted ? (
-          <div className="border border-[#2C2C2C] text-sm text-primary h-9 w-[290px] flex items-center py-0.5 px-2 justify-between">
+          <div className="flex h-9 w-[290px] items-center justify-between border border-[#2C2C2C] px-2 py-0.5 text-primary text-sm">
             <p>Subscribed</p>
 
             <svg
